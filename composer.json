@@ -1,0 +1,42 @@
+{
+    "name": "toshiyoung/laravel-smsru",
+    "description": "Sms.ru Notification Channel for laravel.",
+    "keywords": ["laravel", "notifications", "sms.ru"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nikita Burakov",
+            "email": "i@toshiyoung.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "guzzlehttp/guzzle": "^7.4"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^7.5",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelSmsRu\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LaravelSmsRu\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": [
+            "vendor/bin/phpunit"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelSmsRu\\SmsRuServiceProvider"
+            ]
+        }
+    }
+}
