@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelSmsRu;
+namespace NotificationChannels\SmsRu;
 
 use GuzzleHttp\Client as HttpClient;
 use Illuminate\Support\ServiceProvider;

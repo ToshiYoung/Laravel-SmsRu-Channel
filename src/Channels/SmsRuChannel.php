@@ -1,12 +1,12 @@
 <?php
 
-namespace LaravelSmsRu\Channels;
+namespace NotificationChannels\SmsRu\Channels;
 
 use GuzzleHttp\Exception\GuzzleException;
 use Illuminate\Notifications\Notification;
-use LaravelSmsRu\Exceptions\ResponseException;
-use LaravelSmsRu\Messages\SmsRuMessage;
-use LaravelSmsRu\SmsRuApi;
+use NotificationChannels\SmsRu\Exceptions\ResponseException;
+use NotificationChannels\SmsRu\Messages\SmsRuMessage;
+use NotificationChannels\SmsRu\SmsRuApi;
 
 /**
  *

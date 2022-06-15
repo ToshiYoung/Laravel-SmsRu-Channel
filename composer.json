@@ -1,5 +1,5 @@
 {
-    "name": "toshiyoung/laravel-smsru",
+    "name": "toshiyoung/laravel-smsru-channel",
     "description": "Sms.ru Notification Channel for laravel.",
     "keywords": ["laravel", "notifications", "sms.ru"],
     "license": "MIT",
@@ -19,12 +19,12 @@
     },
     "autoload": {
         "psr-4": {
-            "LaravelSmsRu\\": "src/"
+            "NotificationChannels\\SmsRu\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "LaravelSmsRu\\Tests\\": "tests/"
+            "NotificationChannels\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -35,7 +35,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "LaravelSmsRu\\SmsRuServiceProvider"
+                "NotificationChannels\\SmsRu\\SmsRuServiceProvider"
             ]
         }
     }

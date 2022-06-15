@@ -1,14 +1,14 @@
 <?php
 
-namespace LaravelSmsRu\Tests;
+namespace NotificationChannels\SmsRu\Tests;
 
 use GuzzleHttp\Exception\GuzzleException;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Notifications\Notification;
-use LaravelSmsRu\Channels\SmsRuChannel;
-use LaravelSmsRu\Exceptions\ResponseException;
-use LaravelSmsRu\Messages\SmsRuMessage;
-use LaravelSmsRu\SmsRuApi;
+use NotificationChannels\SmsRu\Channels\SmsRuChannel;
+use NotificationChannels\SmsRu\Exceptions\ResponseException;
+use NotificationChannels\SmsRu\Messages\SmsRuMessage;
+use NotificationChannels\SmsRu\SmsRuApi;
 use PHPUnit\Framework\TestCase;
 use Mockery as M;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelSmsRu\Messages;
+namespace NotificationChannels\SmsRu\Messages;
 
 /**
  *

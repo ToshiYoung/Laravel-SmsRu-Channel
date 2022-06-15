@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelSmsRu\Exceptions;
+namespace NotificationChannels\SmsRu\Exceptions;
 
 use DomainException;
 use Exception;

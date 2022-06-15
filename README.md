@@ -1,13 +1,18 @@
 # Sms.ru notification channel for Laravel
 
+## Install
+```
+php artisan vendor:publish --provider="NotificationChannels\SmsRu\SmsRuServiceProvider\"
+```
+
 ## Usage
 
 You can use the channel in your `via()` method inside the notification:
 
 ```php
 use Illuminate\Notifications\Notification;
-use LaravelSmsRu\Messages\SmscRuMessage;
-use LaravelSmsRu\Channels\SmscRuChannel;
+use NotificationChannels\SmsRu\Messages\SmscRuMessage;
+use NotificationChannels\SmsRu\Channels\SmscRuChannel;
 
 class AccountApproved extends Notification
 {
