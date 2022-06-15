@@ -1,12 +1,12 @@
 <?php
 
-namespace NotificationChannels\SmsRu;
+namespace TY\SmsRu;
 
 use DomainException;
 use Exception;
 use GuzzleHttp\Client as HttpClient;
 use GuzzleHttp\Exception\GuzzleException;
-use NotificationChannels\SmsRu\Exceptions\ResponseException;
+use TY\SmsRu\Exceptions\ResponseException;
 
 /**
  *
@@ -89,7 +89,7 @@ class SmsRuApi {
         $params = http_build_query(array_merge($base, array_filter($params)));
 
         try {
-            $response = $this->client->request('POST', 'https://sms.ru/sms/send'.$params);
+            $response = $this->client->request('POST', 'https://sms.ru/sms/send?'.$params);
             $response = json_decode((string) $response->getBody(), true);
 
             if ($response['status'] == "ERROR") {

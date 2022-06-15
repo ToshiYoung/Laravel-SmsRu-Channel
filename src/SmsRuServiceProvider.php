@@ -1,6 +1,6 @@
 <?php
 
-namespace NotificationChannels\SmsRu;
+namespace TY\SmsRu;
 
 use GuzzleHttp\Client as HttpClient;
 use Illuminate\Support\ServiceProvider;

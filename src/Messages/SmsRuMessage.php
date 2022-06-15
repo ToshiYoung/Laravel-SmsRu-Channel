@@ -1,6 +1,6 @@
 <?php
 
-namespace NotificationChannels\SmsRu\Messages;
+namespace TY\SmsRu\Messages;
 
 /**
  *

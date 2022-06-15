@@ -19,12 +19,12 @@
     },
     "autoload": {
         "psr-4": {
-            "NotificationChannels\\SmsRu\\": "src/"
+            "TY\\SmsRu\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "NotificationChannels\\Tests\\": "tests/"
+            "TY\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -35,7 +35,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "NotificationChannels\\SmsRu\\SmsRuServiceProvider"
+                "TY\\SmsRu\\SmsRuServiceProvider"
             ]
         }
     }

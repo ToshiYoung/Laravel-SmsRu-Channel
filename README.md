@@ -2,7 +2,7 @@
 
 ## Install
 ```
-php artisan vendor:publish --provider="NotificationChannels\SmsRu\SmsRuServiceProvider\"
+php artisan vendor:publish --provider="TY\SmsRu\SmsRuServiceProvider"
 ```
 
 ## Usage
@@ -11,10 +11,10 @@ You can use the channel in your `via()` method inside the notification:
 
 ```php
 use Illuminate\Notifications\Notification;
-use NotificationChannels\SmsRu\Messages\SmscRuMessage;
-use NotificationChannels\SmsRu\Channels\SmscRuChannel;
+use TY\SmsRu\Messages\SmscRuMessage;
+use TY\SmsRu\Channels\SmscRuChannel;
 
-class AccountApproved extends Notification
+class SmsNotify extends Notification
 {
     public function via($notifiable)
     {
@@ -23,9 +23,13 @@ class AccountApproved extends Notification
 
     public function toSmsRu($notifiable)
     {
-        return new SmsRuMessage("Task #{$notifiable->id} is complete!");
+        return new SmsRuMessage("Привет! Это тестовое СМС.");
     }
 }
+```
+
+```php
+Notification::route('sms_ru', '79301579978')->notify(new SmsNotify());
 ```
 
 ## Testing

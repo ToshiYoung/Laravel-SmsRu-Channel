@@ -1,14 +1,14 @@
 <?php
 
-namespace NotificationChannels\SmsRu\Tests;
+namespace TY\Tests;
 
 use GuzzleHttp\Exception\GuzzleException;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Notifications\Notification;
-use NotificationChannels\SmsRu\Channels\SmsRuChannel;
-use NotificationChannels\SmsRu\Exceptions\ResponseException;
-use NotificationChannels\SmsRu\Messages\SmsRuMessage;
-use NotificationChannels\SmsRu\SmsRuApi;
+use TY\SmsRu\Channels\SmsRuChannel;
+use TY\SmsRu\Exceptions\ResponseException;
+use TY\SmsRu\Messages\SmsRuMessage;
+use TY\SmsRu\SmsRuApi;
 use PHPUnit\Framework\TestCase;
 use Mockery as M;
 

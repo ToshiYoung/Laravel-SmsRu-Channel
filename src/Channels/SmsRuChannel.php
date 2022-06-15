@@ -1,12 +1,12 @@
 <?php
 
-namespace NotificationChannels\SmsRu\Channels;
+namespace TY\SmsRu\Channels;
 
 use GuzzleHttp\Exception\GuzzleException;
 use Illuminate\Notifications\Notification;
-use NotificationChannels\SmsRu\Exceptions\ResponseException;
-use NotificationChannels\SmsRu\Messages\SmsRuMessage;
-use NotificationChannels\SmsRu\SmsRuApi;
+use TY\SmsRu\Exceptions\ResponseException;
+use TY\SmsRu\Messages\SmsRuMessage;
+use TY\SmsRu\SmsRuApi;
 
 /**
  *
