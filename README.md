@@ -2,6 +2,10 @@
 
 ## Install
 ```
+composer require toshiyoung/laravel-smsru-channel
+```
+
+```
 php artisan vendor:publish --provider="TY\SmsRu\SmsRuServiceProvider"
 ```
 
