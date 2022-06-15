@@ -2,7 +2,7 @@
 
 ## Install
 ```
-php artisan vendor:publish --provider="LaravelSmsRu\SmsRuServiceProvider\"
+php artisan vendor:publish --provider="LaravelSmsRu\SmsRuServiceProvider"
 ```
 
 ## Usage
