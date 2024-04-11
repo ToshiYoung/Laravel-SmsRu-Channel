@@ -33,7 +33,7 @@ class SmsNotify extends Notification
 ```
 
 ```php
-Notification::route('sms_ru', '79109876543')->notify(new SmsNotify());
+Notification::route('sms_ru', '79001231234')->notify(new SmsNotify());
 ```
 
 ## Testing
